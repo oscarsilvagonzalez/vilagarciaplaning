@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo: #f4f4f4;  /* Gris muy claro */
+    --color-primario: #222831; /* Gris oscuro*/
+    --color-secundario: #393e46; /* Gris medio*/ 
+    --color-acento: #00adb5; /* Azul verdoso suave*/
+    --color-texto: #222831; /* Texto oscuro*/
+}
+
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    padding: 1em;
+}
+
+.btn {
+    position: fixed;
+    color: #111;
+    font-weight: 600;
+    background-color: rgb(148, 221, 39);
+    padding: 1em 2em;
+    border-radius: .5em;
+    text-align: center;
+    letter-spacing: 3px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    bottom: 12px;
+    right: 20px;
+    opacity: .8;
+}
+
+.header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    .h2{
+        font-size: 2.3em;
+        letter-spacing: 3px;
+    }
+}
+
+.header .nav {
+ margin: 2em auto;
+ width: 100%;
+    .ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        justify-content: space-evenly;
+    }
+   .ul {
+    flex-direction: column;
+    gap: 2em;
+    a{
+        font-size: 1.6em;
+    }
+   }
+}
+
+.main {
+    .target {
+        padding: 1em;
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+        margin: 1em auto;
+        border-radius: .5em;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .target {
+
+        .h3 {
+            text-transform: uppercase;
+;
+        }
+
+        time {
+            color: brown;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+        span {
+            font-weight: 600;
+            font-size: 1.3em;
+        }
+
+        fieldset {
+            legend{
+                color: black;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            background-color: rgba(64, 10, 140, 0);
+            color: #695454;
+            letter-spacing: 2px;
+            font-weight: 600;
+            width: fit-content;
+            margin: 1em auto;
+            padding: 2em;
+            border-radius: .5em;
+        }
+
+        img {
+          border-radius: .5em;
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+       }
+
+       
+
+
+
+    }
+    .jueves {
+        gap: 2em;
+       }
+}
+
+
+
+
